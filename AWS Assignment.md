@@ -1,4 +1,4 @@
-## AWS Assignment
+# AWS Assignment
 ## 🔑 Prerequisites:
 Laptop with internet access.
 AWS Free Tier account (credit/debit card required for signup).
@@ -107,17 +107,17 @@ ansible --version
           </html>
 
 ```
-## Export your name and roll number
+### Export your name and roll number
 export STUDENT_NAME="xyz xyz"
 
 export ROLL_NO="123456"
 
-## run
+### run
 ```
 ansible -i inventory.ini web -m ping
 ansible-playbook -i inventory.ini site.yml
 ```
-# Dockerfile (minimal Apache image)
+## Dockerfile (minimal Apache image)
 Builds a tiny image that serves the same page. No external files needed.
 ```
 # Simple Apache image that serves Name + Roll No
@@ -183,13 +183,13 @@ sudo systemctl enable docker
 sudo systemctl status docker
 ```
 Explanation: Starts Docker now and on future boots.
-# build docker file
+## build docker file
 ```
 docker build -t Your_File_Name .
 ```
 -t student-apache tags your image with the name student-apache.
 . tells Docker to look for the Dockerfile in the current directory.
-# Run Docker Container
+## Run Docker Container
 ```
 docker run -d -p 8080:80 --name my-student-web Your_File_Name
 ```
@@ -199,7 +199,7 @@ docker ps
 -d: detached mode
 -p 8080:80: map port 8080 on your host to port 80 in the container
 --name: give your container a name
-# Now visit http://localhost:8080 to see the deployed page.
+## Now visit http://localhost:8080 to see the deployed page.
 ## Docker Hub Account Creation
 In your desktop go to following address:
 
