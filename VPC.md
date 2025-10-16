@@ -28,7 +28,7 @@ IPv4 VPC CIDR block: Selected by default 172.20.0.0/16
 IPv4 subnet CIDR block: 172.20.10.0/24.
 Click on Create Subnet button
 ```
-Step 3: Internet Gateway (IGW)¶
+Step 3: Internet Gateway (IGW)
 ```
 On the VPC Dashboard page, on the right side under Virtual Private Cloud, click on Internet Gateways
 Click on Creat Internet gateway
@@ -70,6 +70,7 @@ Route Table ID: Select rtb-ditiss-lab
 Click on Save
 ```
 Step 6: Change settings of private-subnet
+
 Alert
 This setting is only for demo purposes, in real world, a private subnet should never have a public IP assigned. Instead we use a Jump/Bastion Host which acts as a jump betwen internet and private subnets.
 On the VPC Dashboard page, on the right side under Virtual Private Cloud, click on Subnets
