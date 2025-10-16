@@ -1,6 +1,9 @@
 ## AWS Assignment
-## Prerequisite:
-
+## 🔑 Prerequisites:
+Laptop with internet access.
+AWS Free Tier account (credit/debit card required for signup).
+Basic Linux commands knowledge (yum, apt, curl).
+### In AWS:
   VPC (10.0.0.0/16):SUBNET(PUBLIC(10.0.1.0/24) AND PRIVATE(10.0.2.0/24))
   ROUTE,NAT,SECURITY GROUP(SSH,HTTP AND PORT 8080 for docker) 
   Create  the key(pem) same for all ec2 virtual machine !
@@ -192,7 +195,6 @@ docker run -d -p 8080:80 --name my-student-web Your_File_Name
 ```
 docker ps
 ```
-
 -d: detached mode
 -p 8080:80: map port 8080 on your host to port 80 in the container
 --name: give your container a name
@@ -207,13 +209,14 @@ Enter your email address
 Put your desired Username
 Enter your password
 Click on Sign Up
+
 Step 4: Verify on Docker Hub
 ```
 Go to https://hub.docker.com
 Login to your account
 Navigate to Repositories and confirm your image flask-demo-app:v1 is listed !!!
 ```
-
+============================================================================================
 ## 📤 Push Docker Image to Docker Hub
 After building and running your Docker image locally, follow the steps below to push it to Docker Hub.
 
@@ -222,11 +225,15 @@ After building and running your Docker image locally, follow the steps below to 
 docker tag Your_Image_Name Your_DockerHub_Username/Your_Repository_Name:latest
 ```
 Your_Image_Name: the name of the image you built locally (e.g., student-apache)
+
 Your_DockerHub_Username: your Docker Hub username
+
 Your_Repository_Name: the name of your Docker Hub repository
 
 🔐 Step 2: Log in to Docker Hub
+```
 docker login
+```
 Enter your Docker Hub username and password when prompted.
 
 ☁️ Step 3: Push the Image to Docker Hub
