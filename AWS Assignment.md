@@ -108,7 +108,8 @@ ansible --version
 
 ```
 ## Export your name and roll number
-export STUDENT_NAME="Alice Johnson"
+export STUDENT_NAME="xyz xyz"
+
 export ROLL_NO="123456"
 
 ## run
