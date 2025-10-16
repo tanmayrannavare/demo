@@ -6,7 +6,7 @@ Basic Linux commands knowledge (yum, apt, curl).
 ### In AWS:
   VPC (10.0.0.0/16):SUBNET(PUBLIC(10.0.1.0/24) AND PRIVATE(10.0.2.0/24))
   ROUTE,NAT,SECURITY GROUP(SSH,HTTP AND PORT 8080 for docker) 
-  Create  the key(pem) same for all ec2 virtual machine !
+  Create  the key(pem) same for all ubuntu/ec2 virtual machine !
   
 ## Objectives
  Stand up a basic two-subnet VPC in AWS (public + private).
