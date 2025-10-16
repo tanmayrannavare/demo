@@ -1,4 +1,5 @@
-Create a New VPC with Public & Private Subnets¶
+Create a New VPC with Public & Private Subnets
+
 We'll design a custom VPC called ditiss-lab.
 
 Step 1: Create VPC
@@ -86,6 +87,7 @@ Route Table ID: Select rtb-ditiss-lab
 Click on Save
 ```
 Step 7: Create Security Groups
+
 Info
 Security Groups are integral part of any VPC. This security groups are the network firewall rules which controls what traffic to flow into the hosts/machines inside those security groups. Essentailly we tell the virtual machines which networks and ports you can access or cannot access.
 ```
