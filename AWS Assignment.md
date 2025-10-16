@@ -147,13 +147,13 @@ sudo apt remove docker docker-engine docker.io containerd runc
 ```
 Explanation: Ensures no legacy Docker is present.
 
-Step 3: Install required packages¶
+Step 3: Install required packages
 ```
 sudo apt install -y ca-certificates curl gnupg lsb-release
 ```
 Explanation: These tools allow adding secure repositories and managing keys.
 
-Step 4: Add Docker’s official GPG key¶
+Step 4: Add Docker’s official GPG key
 ```
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -169,14 +169,14 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev
 ```
 Explanation: Adds Docker’s official repo to apt sources.
 
-Step 6: Install Docker CE¶
+Step 6: Install Docker CE
 ```
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 Explanation: Installs Docker engine, CLI, container runtime, and Compose plugin.
 
-Step 7: Start and enable Docker service¶
+Step 7: Start and enable Docker service
 ```
 sudo systemctl start docker
 sudo systemctl enable docker
