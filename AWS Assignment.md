@@ -215,7 +215,7 @@ Step 4: Verify on Docker Hub
 ```
 Go to https://hub.docker.com
 Login to your account
-Navigate to Repositories and confirm your image flask-demo-app:v1 is listed !!!
+Navigate to Repositories and confirm your image your-image-name:v1 is listed !!!
 ```
 ============================================================================================
 ## 📤 Push Docker Image to Docker Hub
@@ -258,11 +258,11 @@ Enter your Docker Hub username and password when prompted.
 Step 2: Tag Your Docker Image
 ```
 Replace <your_dockerhub_username> with your actual Docker Hub username:
-docker tag flask-demo-app <your_dockerhub_username>/flask-demo-app:v1
+docker tag your-image-name <your_dockerhub_username>/your repo name:v1
 ```
 Step 3: Push the Image to Docker Hub
 ```
-docker push <your_dockerhub_username>/flask-demo-app:v1
+docker push <your_dockerhub_username>/your-repo-name:v1
 ```
 Pulls the image from Docker Hub
 ## Runs it and maps it to http://localhost:8080
